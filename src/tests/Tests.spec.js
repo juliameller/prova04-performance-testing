@@ -7,6 +7,7 @@ import { Trend, Rate } from 'k6/metrics';
 export const getContactsDuration = new Trend('get_contacts', true);
 export const RateContentOK = new Rate('content_OK');
 
+
 export const options = {
   thresholds: {
     http_req_failed: ['rate<0.25'],
